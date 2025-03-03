@@ -1,0 +1,151 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar i {
+    font-size: 1.8rem;
+    color: #dadfe6;
+    transition: 0.3s ease;
+}
+
+.navbar i:hover {
+    transform: scale(1.1);
+    color: #fe466d;
+}
+
+/* Container */
+.container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile Cards */
+.profile-cards {
+    width: 350px;
+    height: 500px;
+    position: relative;
+}
+
+/* Profile Card */
+.profile-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Profile Info */
+.profile-info {
+    padding: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.profile-info h2 {
+    font-size: 2rem;
+}
+
+.profile-info span {
+    font-weight: lighter;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.profile-info p {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Actions */
+.actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+/* Action Buttons */
+.action {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.8rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Dislike */
+.dislike {
+    background: #ff5a5f;
+}
+
+.dislike:hover {
+    background: #ff2e37;
+    transform: scale(1.1);
+}
+
+/* Super Like */
+.super-like {
+    background: #2db1ff;
+    width: 50px;
+    height: 50px;
+}
+
+.super-like:hover {
+    background: #1e8fe5;
+    transform: scale(1.2);
+}
+
+/* Like */
+.like {
+    background: #1be4a1;
+}
+
+.like:hover {
+    background: #12c78e;
+    transform: scale(1.1);
+}
